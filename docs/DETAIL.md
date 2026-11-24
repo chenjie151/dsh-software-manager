@@ -1,1 +1,1 @@
-![The Software Manager panel: a list of packages the agent installed, each row with its purpose, the session that installed it, the resolved location, a status dot and an uninstall button](preview.svg)
+﻿![The Software Manager panel: a list of packages the agent installed, each row with its purpose, the session that installed it, the resolved location, a status dot and an uninstall button](../assets/screenshot-1.png)

@@ -14,9 +14,11 @@
   "files": [
     "lib",
     "docs",
+    "assets",
     "icon.svg",
     "locale",
-    "cordis.patch.yml"
+    "cordis.patch.yml",
+    "screenshots.json"
   ],
   "keywords": [
     "deepseek-harness",

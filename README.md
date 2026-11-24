@@ -1,8 +1,10 @@
-# dsh-software-manager
+﻿# dsh-software-manager
 
-A plugin for [DSH] (DeepSeek Harness) that answers one question: **what did the agent install on my machine, and where did it go?** It reads your DSH session logs, finds every install command the agent ran, resolves each package to its real location, and uninstalls it in one click.
+A plugin for DSH (DeepSeek Harness) that answers one question: **what did the agent install on my machine, and where did it go?** It reads your DSH session logs, finds every install command the agent ran, resolves each package to its real location, and uninstalls it in one click.
 
-[DSH] 插件：**agent 在会话里到底往这台机器装了什么、装到哪去了？** 它读你的 DSH 会话日志，找出 agent 执行过的每一条安装命令，定位到真实安装位置，并支持一键卸载。
+DSH (DeepSeek Harness) 插件：**agent 在会话里到底往这台机器装了什么、装到哪去了？** 它读你的 DSH 会话日志，找出 agent 执行过的每一条安装命令，定位到真实安装位置，并支持一键卸载。
+
+![软件管理面板：每一行是一个 agent 装过的软件，带用途、是哪个会话装的、定位到的安装路径、状态灯，以及卸载按钮](assets/screenshot-1.png)
 
 ## What it shows / 显示什么
 
