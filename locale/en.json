@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Software Manager",
+    "description": "Lists the software the agent installed during sessions, where it actually landed and its version, and uninstalls it in one click (winget / pip / npm / choco / scoop / cargo / uv / gem / MSI / portable folders).",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "软件管理",
+    "description": "列出 harness 在会话中安装的软件、实际安装位置与版本，并支持一键卸载（winget / pip / npm / choco / scoop / cargo / uv / gem / MSI / 绿色目录）。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "dsh-software-manager",
+  "version": "0.1.0",
+  "description": "Harness software manager: lists the software the agent installed during sessions, where it landed, and uninstalls it in one click. / Harness 软件管理：列出 agent 在会话中安装过的软件、安装位置，并支持一键卸载。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "docs",
+    "icon.svg",
+    "locale",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "software",
+    "uninstall",
+    "winget",
+    "pip",
+    "npm"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenjie151/dsh-software-manager.git"
+  },
+  "homepage": "https://github.com/chenjie151/dsh-software-manager#readme",
+  "bugs": {
+    "url": "https://github.com/chenjie151/dsh-software-manager/issues"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}

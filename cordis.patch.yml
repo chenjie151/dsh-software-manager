@@ -1,0 +1,5 @@
+# dsh-software-manager bundle patch: mount the host plugin under its package
+# name, resolved through the profile's node_modules.
+- insert:
+    - id: software-manager
+      name: dsh-software-manager
