@@ -1,4 +1,4 @@
-﻿# dsh-software-manager
+# dsh-software-manager
 
 A plugin for [DSH] (DeepSeek Harness) that answers one question: **what did the agent install on my machine, and where did it go?** It reads your DSH session logs, finds every install command the agent ran, resolves each package to its real location, and uninstalls it in one click.
 
@@ -19,10 +19,16 @@ A plugin for [DSH] (DeepSeek Harness) that answers one question: **what did the 
 
 ## Install / 安装
 
-Straight from this repository / 直接从仓库安装（）：
+Straight from this repository / 直接从仓库安装：
 
 ```sh
 dsh plugin add github:chenjie151/dsh-software-manager
+```
+
+Pin a commit so a later push cannot change what runs / 锁定提交，后续推送就无法悄悄换掉你运行的代码：
+
+```sh
+dsh plugin add github:chenjie151/dsh-software-manager#<commit-sha>
 ```
 
 Or from a local checkout / 或从本地源码目录安装：
@@ -30,6 +36,8 @@ Or from a local checkout / 或从本地源码目录安装：
 ```sh
 dsh plugin add ./path/to/dsh-software-manager
 ```
+
+There is no build step — `lib/` ships as plain ESM and `package.json` declares no `scripts`, so installing from git needs no `allowBuilds` build approval. / 没有构建步骤：`lib/` 就是可运行的 ESM 源码，`package.json` 里没有任何 `scripts`，所以从 git 安装不需要 `allowBuilds` 构建授权。
 
 In the desktop client, enable it under **Settings → Plugins** and press `Ctrl+R` to reload the window. The entry shows up in the left sidebar as **软件管理 / Software Manager**.
 
